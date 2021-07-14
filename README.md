@@ -18,7 +18,7 @@
 Проект сделан с [Create React App](https://github.com/facebook/create-react-app).
 
 Для `запуска` клонировать репозиторий с помощью команды
-`https://github.com/ard43g/pundulum.git`
+`https://github.com/ard43g/pendulum.git`
 
 Установить зависимости с помощью команды:
 `npm install`
