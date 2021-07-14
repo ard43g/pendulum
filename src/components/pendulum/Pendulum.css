@@ -1,0 +1,142 @@
+:root {
+    --mainColor: #0075ff;
+    --height: ;
+    --bobSize: ;
+    --bobBottom: ;
+    --startPosition: ;
+    --centerPosition: ;
+    --time: ;
+    --amplitude: ;
+    --background: ;
+}
+
+.pendulum__wrapper {
+    padding-top: 20px;
+    min-height: 200px;
+    border-radius: 20px;
+    background: var(--background);
+    overflow: hidden;
+}
+.pendulum__block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    margin: 0 auto;
+}
+.pendulum__loader {
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+}
+.pendulum__image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.pendulum__image svg {
+    width: 100%;
+}
+
+.pendulum__block::before,
+.pendulum__block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 10px;
+    border-radius: 20px 20px 0 0;
+}
+.pendulum__block::before {
+    z-index: 1;
+    height: var(--amplitude);
+    background-color: var(--mainColor);
+}
+.pendulum__block::after {
+    height: 100px;
+    background-color: #fff;
+}
+
+.pendulum__pivot {
+    position: absolute;
+    z-index: 2;
+    top: 155px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 100%;
+    transform: translateX(-50%);
+}
+
+.pendulum__rod {
+    position: absolute;
+    z-index: 1;
+    top: 160px;
+    left: calc(50% - 1.5px);
+    width: 3px;
+    height: var(--height);
+    background-color: #fff;
+    transform-origin: top center;
+    transform: rotate(var(--startPosition));
+}
+
+.pendulum__bob {
+    position: absolute;
+    z-index: 1;
+    bottom: var(--bobBottom);
+    width: var(--bobSize);
+    height: var(--bobSize);
+    border-radius: 100%;
+    background-color: var(--mainColor);
+    transform: translateX(calc(-50% + 1.5px));
+}
+
+.earth {
+    animation: earth cubic-bezier(0.445, 0.05, 0.55, 0.95) var(--time);
+}
+
+.space {
+    animation: space linear var(--time);
+    transition: all 1.7s ease 0s;
+}
+
+@keyframes earth {
+    0% {
+        transform: rotate(var(--startPosition));
+    }
+
+    25% {
+        transform: rotate(var(--centerPosition));
+    }
+    50% {
+        transform: rotate(calc(var(--startPosition) / 2));
+    }
+    75% {
+        transform: rotate(calc(var(--centerPosition) / 2));
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes space {
+    0% {
+        transform: rotate(var(--startPosition));
+    }
+
+    25% {
+        transform: rotate(var(--centerPosition));
+    }
+    50% {
+        transform: rotate(calc(var(--startPosition) / 2));
+    }
+    75% {
+        transform: rotate(calc(var(--centerPosition) / 2));
+    }
+    100% {
+        transform: rotate(var(--startPosition));
+    }
+}

@@ -1,0 +1,17 @@
+.button {
+    width: 70px;
+    height: 30px;
+    line-height: 24px;
+    color: #eee;
+    border: none;
+    border-radius: 10px;
+    background-color: #0075ff;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:disabled {
+    background-color: #0077ff46;
+    cursor: wait;
+}
