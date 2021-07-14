@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/pundulum/static/css/main.762095df.chunk.css",
-    "main.js": "/pundulum/static/js/main.b8772917.chunk.js",
-    "main.js.map": "/pundulum/static/js/main.b8772917.chunk.js.map",
-    "runtime-main.js": "/pundulum/static/js/runtime-main.a8403866.js",
-    "runtime-main.js.map": "/pundulum/static/js/runtime-main.a8403866.js.map",
-    "static/js/2.eae64724.chunk.js": "/pundulum/static/js/2.eae64724.chunk.js",
-    "static/js/2.eae64724.chunk.js.map": "/pundulum/static/js/2.eae64724.chunk.js.map",
+    "main.js": "/pundulum/static/js/main.b68f96e5.chunk.js",
+    "main.js.map": "/pundulum/static/js/main.b68f96e5.chunk.js.map",
+    "runtime-main.js": "/pundulum/static/js/runtime-main.96999130.js",
+    "runtime-main.js.map": "/pundulum/static/js/runtime-main.96999130.js.map",
+    "static/js/2.0ad36e4c.chunk.js": "/pundulum/static/js/2.0ad36e4c.chunk.js",
+    "static/js/2.0ad36e4c.chunk.js.map": "/pundulum/static/js/2.0ad36e4c.chunk.js.map",
     "index.html": "/pundulum/index.html",
     "static/css/main.762095df.chunk.css.map": "/pundulum/static/css/main.762095df.chunk.css.map",
-    "static/js/2.eae64724.chunk.js.LICENSE.txt": "/pundulum/static/js/2.eae64724.chunk.js.LICENSE.txt"
+    "static/js/2.0ad36e4c.chunk.js.LICENSE.txt": "/pundulum/static/js/2.0ad36e4c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8403866.js",
-    "static/js/2.eae64724.chunk.js",
+    "static/js/runtime-main.96999130.js",
+    "static/js/2.0ad36e4c.chunk.js",
     "static/css/main.762095df.chunk.css",
-    "static/js/main.b8772917.chunk.js"
+    "static/js/main.b68f96e5.chunk.js"
   ]
 }
