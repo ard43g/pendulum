@@ -1,13 +1,20 @@
 :root {
     --mainColor: #0075ff;
-    --height: ;
-    --bobSize: ;
-    --bobBottom: ;
-    --startPosition: ;
-    --centerPosition: ;
-    --time: ;
-    --amplitude: ;
-    --background: ;
+    --height: 45px;
+    --bobSize: 17.5px;
+    --bobBottom: -17.5px;
+    --startPosition: 40deg;
+    --centerPosition: -28.75deg;
+    --time: 3.1s;
+    --amplitude: 40px;
+    --background: linear-gradient(
+        90deg,
+        rgba(120, 213, 91, 1) 0%,
+        rgba(105, 192, 200, 1) 44%,
+        rgba(180, 204, 67, 1) 61%,
+        rgba(62, 148, 216, 1) 83%,
+        rgba(240, 214, 59, 1) 98%
+    );
 }
 
 .pendulum__wrapper {
